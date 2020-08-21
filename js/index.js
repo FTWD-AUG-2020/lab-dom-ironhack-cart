@@ -26,3 +26,10 @@ for (let i = 0; i < removeButtons.length; i++) {
   let eachButton = removeButtons[i]
   eachButton.onclick = deleteRow
 }
+
+document.querySelector('#create').onclick = createProduct
+function createProduct() {
+let productName = document.querySelector('#broccoli').value
+let productPrice = document.querySelector('#raspberries').value
+console.log(productName, productPrice)
+}
