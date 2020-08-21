@@ -7,6 +7,17 @@ function calculateAll() {
     let price = row.querySelector('.price span').innerHTML;
     let quantity = row.querySelector('.quantity input').value;
     let subtotal = price * quantity;
+    total += subtotal
+
     row.querySelector('.subtotal span').innerHTML = subtotal;
+    
   }
+  document.querySelector('#total-value span').innerHTML= total
 }
+
+
+
+
+
+
+
